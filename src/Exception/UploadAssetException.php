@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains cweagans\webdam\Exception\UploadAssetException.
+ * Contains bynder\webdam\Exception\UploadAssetException.
  */
 
-namespace cweagans\webdam\Exception;
+namespace bynder\webdam\Exception;
 
 /**
  * Class UploadAssetException

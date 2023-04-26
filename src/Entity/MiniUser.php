@@ -5,7 +5,7 @@
  * Describes Webdam's MiniUser data type.
  */
 
-namespace cweagans\webdam\Entity;
+namespace bynder\webdam\Entity;
 
 class MiniUser implements EntityInterface, \JsonSerializable {
 

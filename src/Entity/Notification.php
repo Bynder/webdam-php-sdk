@@ -5,7 +5,7 @@
  * Describes Webdam's Notification data type.
  */
 
-namespace cweagans\webdam\Entity;
+namespace bynder\webdam\Entity;
 
 class Notification implements EntityInterface, \JsonSerializable {
 

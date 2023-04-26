@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests cweagans\webdam\Entity\MiniUser.
+ * Tests bynder\webdam\Entity\MiniUser.
  */
 
-namespace cweagans\webdam\tests;
+namespace bynder\webdam\tests;
 
-use cweagans\webdam\Entity\Lightbox;
+use bynder\webdam\Entity\Lightbox;
 
 class LightboxEntityTest extends EntityTestBase {
 
@@ -25,7 +25,7 @@ class LightboxEntityTest extends EntityTestBase {
     $this->assertEquals("123", $lightbox->numCollaborators);
     $this->assertEquals("234", $lightbox->numComments);
     $this->assertEquals("456", $lightbox->numberitems);
-    $this->assertInstanceOf("cweagans\webdam\Entity\MiniUser", $lightbox->user);
+    $this->assertInstanceOf("bynder\webdam\Entity\MiniUser", $lightbox->user);
     $this->assertEquals("12345", $lightbox->user->id);
     $this->assertEquals("jdoe@example.com", $lightbox->user->email);
     $this->assertEquals("John Doe", $lightbox->user->name);

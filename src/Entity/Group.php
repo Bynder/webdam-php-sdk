@@ -5,7 +5,7 @@
  * Describes Webdam's Group data type.
  */
 
-namespace cweagans\webdam\Entity;
+namespace bynder\webdam\Entity;
 
 class Group implements EntityInterface, \JsonSerializable {
 

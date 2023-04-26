@@ -5,7 +5,7 @@
  * Describes Webdam's MiniFolder data type.
  */
 
-namespace cweagans\webdam\Entity;
+namespace bynder\webdam\Entity;
 
 class MiniFolder implements EntityInterface, \JsonSerializable {
 

@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests cweagans\webdam\Entity\Group.
+ * Tests bynder\webdam\Entity\Group.
  */
 
-namespace cweagans\webdam\tests;
+namespace bynder\webdam\tests;
 
-use cweagans\webdam\Entity\Group;
+use bynder\webdam\Entity\Group;
 
 class GroupEntityTest extends EntityTestBase {
 

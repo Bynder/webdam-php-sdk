@@ -5,14 +5,14 @@
  * Provides API interface for Webdam.
  */
 
-namespace cweagans\webdam;
+namespace bynder\webdam;
 
-use cweagans\webdam\Entity\Asset;
-use cweagans\webdam\Entity\Folder;
-use cweagans\webdam\Entity\MiniFolder;
-use cweagans\webdam\Entity\User;
-use cweagans\webdam\Exception\InvalidCredentialsException;
-use cweagans\webdam\Exception\UploadAssetException;
+use bynder\webdam\Entity\Asset;
+use bynder\webdam\Entity\Folder;
+use bynder\webdam\Entity\MiniFolder;
+use bynder\webdam\Entity\User;
+use bynder\webdam\Exception\InvalidCredentialsException;
+use bynder\webdam\Exception\UploadAssetException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ClientException;
 
@@ -124,11 +124,11 @@ class Client {
 
     /**
      * For error response body details:
-     * @see \cweagans\webdam\tests\ClientTest::testInvalidClient()
-     * @see \cweagans\webdam\tests\ClientTest::testInvalidGrant()
+     * @see \bynder\webdam\tests\ClientTest::testInvalidClient()
+     * @see \bynder\webdam\tests\ClientTest::testInvalidGrant()
      *
      * For successful auth response body details:
-     * @see \cweagans\webdam\tests\ClientTest::testSuccessfulAuthentication()
+     * @see \bynder\webdam\tests\ClientTest::testSuccessfulAuthentication()
      */
     try {
       $response = $this->client->request("POST", $url, ['form_params' => $data]);
@@ -174,7 +174,7 @@ class Client {
    */
   protected function getDefaultHeaders() {
     return [
-      'User-Agent' => "cweagans/php-webdam-client " . self::CLIENTVERSION,
+      'User-Agent' => "bynder/php-webdam-client " . self::CLIENTVERSION,
       'Accept' => 'application/json',
       'Authorization' => 'Bearer ' . $this->accessToken,
     ];

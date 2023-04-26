@@ -5,7 +5,7 @@
  * Describes Webdam's Asset data type.
  */
 
-namespace cweagans\webdam\Entity;
+namespace bynder\webdam\Entity;
 
 class Asset implements EntityInterface, \JsonSerializable {
 

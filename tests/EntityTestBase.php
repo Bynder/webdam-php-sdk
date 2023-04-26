@@ -1,6 +1,6 @@
 <?php
 
-namespace cweagans\webdam\tests;
+namespace bynder\webdam\tests;
 
 use PHPUnit\Framework\TestCase;
 

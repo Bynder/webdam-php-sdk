@@ -1,19 +1,12 @@
 {
-  "name": "cweagans/php-webdam-client",
-  "description": "Integrates with the Webdam.com API.",
+  "name": "Bynder/webdam-php-sdk",
+  "description": "SDK in PHP for integrations with WebDAM",
   "license": "MIT",
-  "homepage": "https://github.com/cweagans/php-webdam-client",
-  "authors": [
-    {
-      "name": "Cameron Eagans",
-      "email": "me@cweagans.net",
-      "homepage": "https://cweagans.net"
-    }
-  ],
+  "homepage": "https://github.com/Bynder/webdam-php-sdk",
   "require": {
-    "php": ">=5.6.0",
-    "guzzlehttp/guzzle": ">=4.1.4 <7.0",
-    "guzzlehttp/psr7": "~1.0"
+    "php": ">=8.1.0",
+    "guzzlehttp/guzzle": "^7.5",
+    "guzzlehttp/psr7": "^2.4"
   },
   "require-dev": {
     "phpunit/phpunit": "~6.0"

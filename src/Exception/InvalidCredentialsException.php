@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains bynder\webdam\Exception\InvalidCredentialsException.
+ * Contains Bynder\webdam\Exception\InvalidCredentialsException.
  */
 
-namespace bynder\webdam\Exception;
+namespace Bynder\webdam\Exception;
 
 /**
  * Class InvalidCredentialsException

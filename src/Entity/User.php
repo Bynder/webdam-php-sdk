@@ -5,7 +5,7 @@
  * Describes Webdam's User data type.
  */
 
-namespace bynder\webdam\Entity;
+namespace Bynder\webdam\Entity;
 
 class User implements EntityInterface, \JsonSerializable {
 

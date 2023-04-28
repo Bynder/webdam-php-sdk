@@ -13,12 +13,12 @@
   },
   "autoload": {
     "psr-4": {
-      "bynder\\webdam\\": "src"
+      "Bynder\\webdam\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "bynder\\webdam\\tests\\": "tests"
+      "Bynder\\webdam\\tests\\": "tests"
     }
   }
 }

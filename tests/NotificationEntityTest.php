@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Entity\Notification.
+ * Tests Bynder\webdam\Entity\Notification.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Entity\Notification;
+use Bynder\webdam\Entity\Notification;
 
 class NotificationEntityTest extends EntityTestBase {
 
@@ -16,7 +16,7 @@ class NotificationEntityTest extends EntityTestBase {
     $notification = Notification::fromJson($json);
     $this->assertEquals("2952", $notification->id);
     $this->assertEquals("comment", $notification->action);
-    $this->assertInstanceOf('bynder\webdam\Entity\MiniUser', $notification->user);
+    $this->assertInstanceOf('Bynder\webdam\Entity\MiniUser', $notification->user);
     $this->assertTrue(is_object($notification->source));
     $this->assertEquals("lightbox", $notification->source->type);
     $this->assertEquals("39438", $notification->source->id);

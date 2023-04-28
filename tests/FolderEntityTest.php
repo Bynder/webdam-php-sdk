@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Entity\Folder.
+ * Tests Bynder\webdam\Entity\Folder.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Entity\Folder;
+use Bynder\webdam\Entity\Folder;
 
 class FolderEntityTest extends EntityTestBase {
 
@@ -33,7 +33,7 @@ class FolderEntityTest extends EntityTestBase {
     $this->assertNotEmpty($folder->permissions->assets);
     $this->assertTrue(is_array($folder->thumbnailurls));
     $this->assertNotEmpty($folder->thumbnailurls);
-    $this->assertInstanceOf("bynder\webdam\Entity\Miniuser", $folder->user);
+    $this->assertInstanceOf("Bynder\webdam\Entity\Miniuser", $folder->user);
     $this->assertEquals("275508", $folder->user->id);
     $this->assertEquals("jdoe@example.com", $folder->user->email);
     $this->assertEquals("John Doe", $folder->user->name);

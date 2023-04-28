@@ -5,7 +5,7 @@
  * Contains the interface that all entity classes must implement.
  */
 
-namespace bynder\webdam\Entity;
+namespace Bynder\webdam\Entity;
 
 interface EntityInterface {
 

@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Entity\MiniUser.
+ * Tests Bynder\webdam\Entity\MiniUser.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Entity\MiniUser;
+use Bynder\webdam\Entity\MiniUser;
 
 class MiniUserEntityTest extends EntityTestBase {
 

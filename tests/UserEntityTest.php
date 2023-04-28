@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Entity\User.
+ * Tests Bynder\webdam\Entity\User.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Entity\User;
+use Bynder\webdam\Entity\User;
 
 class UserEntityTest extends EntityTestBase {
 
@@ -33,7 +33,7 @@ class UserEntityTest extends EntityTestBase {
     $this->assertEquals("2013-07-10 12:04:24", $user->lastlogin);
     $this->assertTrue(is_array($user->groups));
     $this->assertEquals(1, count($user->groups));
-    $this->assertInstanceOf("bynder\webdam\Entity\Group", $user->groups[0]);
+    $this->assertInstanceOf("Bynder\webdam\Entity\Group", $user->groups[0]);
     $this->assertEquals("21", $user->groups[0]->id);
     $this->assertEquals("Admin", $user->groups[0]->name);
     $this->assertEquals("Group Description", $user->groups[0]->description);

@@ -5,14 +5,14 @@
  * Provides API interface for Webdam.
  */
 
-namespace bynder\webdam;
+namespace Bynder\webdam;
 
-use bynder\webdam\Entity\Asset;
-use bynder\webdam\Entity\Folder;
-use bynder\webdam\Entity\MiniFolder;
-use bynder\webdam\Entity\User;
-use bynder\webdam\Exception\InvalidCredentialsException;
-use bynder\webdam\Exception\UploadAssetException;
+use Bynder\webdam\Entity\Asset;
+use Bynder\webdam\Entity\Folder;
+use Bynder\webdam\Entity\MiniFolder;
+use Bynder\webdam\Entity\User;
+use Bynder\webdam\Exception\InvalidCredentialsException;
+use Bynder\webdam\Exception\UploadAssetException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ClientException;
 
@@ -124,11 +124,11 @@ class Client {
 
     /**
      * For error response body details:
-     * @see \bynder\webdam\tests\ClientTest::testInvalidClient()
-     * @see \bynder\webdam\tests\ClientTest::testInvalidGrant()
+     * @see \Bynder\webdam\tests\ClientTest::testInvalidClient()
+     * @see \Bynder\webdam\tests\ClientTest::testInvalidGrant()
      *
      * For successful auth response body details:
-     * @see \bynder\webdam\tests\ClientTest::testSuccessfulAuthentication()
+     * @see \Bynder\webdam\tests\ClientTest::testSuccessfulAuthentication()
      */
     try {
       $response = $this->client->request("POST", $url, ['form_params' => $data]);

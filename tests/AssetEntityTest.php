@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Entity\Asset.
+ * Tests Bynder\webdam\Entity\Asset.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Entity\Asset;
+use Bynder\webdam\Entity\Asset;
 
 class AssetEntityTest extends EntityTestBase {
 

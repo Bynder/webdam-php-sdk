@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Entity\MiniFolder.
+ * Tests Bynder\webdam\Entity\MiniFolder.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Entity\MiniFolder;
+use Bynder\webdam\Entity\MiniFolder;
 
 class MiniFolderEntityTest extends EntityTestBase {
 

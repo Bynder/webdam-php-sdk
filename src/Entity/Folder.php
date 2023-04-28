@@ -5,7 +5,7 @@
  * Describes Webdam's Folder data type.
  */
 
-namespace bynder\webdam\Entity;
+namespace Bynder\webdam\Entity;
 
 class Folder implements EntityInterface, \JsonSerializable {
 

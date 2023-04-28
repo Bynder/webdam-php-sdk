@@ -5,7 +5,7 @@
  * Describes Webdam's Lightbox data type.
  */
 
-namespace bynder\webdam\Entity;
+namespace Bynder\webdam\Entity;
 
 class Lightbox implements EntityInterface, \JsonSerializable {
 

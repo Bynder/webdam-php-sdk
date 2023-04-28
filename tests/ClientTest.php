@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Tests bynder\webdam\Client.
+ * Tests Bynder\webdam\Client.
  */
 
-namespace bynder\webdam\tests;
+namespace Bynder\webdam\tests;
 
-use bynder\webdam\Client;
+use Bynder\webdam\Client;
 use GuzzleHttp\Client as GClient;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
@@ -19,7 +19,7 @@ class ClientTest extends TestCase {
   /**
    * Tests bad username/password behavior.
    *
-   * @expectedException \bynder\webdam\Exception\InvalidCredentialsException
+   * @expectedException \Bynder\webdam\Exception\InvalidCredentialsException
    * @expectedExceptionMessage Invalid username and password combination (invalid_grant).
    */
   public function testInvalidGrant() {
@@ -39,7 +39,7 @@ class ClientTest extends TestCase {
   /**
    * Tests bad client id/secret behavior.
    *
-   * @expectedException \bynder\webdam\Exception\InvalidCredentialsException
+   * @expectedException \Bynder\webdam\Exception\InvalidCredentialsException
    * @expectedExceptionMessage The client credentials are invalid (invalid_client).
    */
   public function testInvalidClient() {
@@ -122,7 +122,7 @@ class ClientTest extends TestCase {
 
     $folder = $client->getFolder(12345);
     $this->assertTrue(is_object($folder));
-    $this->assertInstanceOf('bynder\webdam\Entity\Folder', $folder);
+    $this->assertInstanceOf('Bynder\webdam\Entity\Folder', $folder);
   }
 
   /**
@@ -140,7 +140,7 @@ class ClientTest extends TestCase {
 
     $folder = $client->getTopLevelFolders();
     $this->assertTrue(is_array($folder));
-    $this->assertInstanceOf('bynder\webdam\Entity\Folder', $folder[0]);
+    $this->assertInstanceOf('Bynder\webdam\Entity\Folder', $folder[0]);
   }
 
   /**
@@ -158,7 +158,7 @@ class ClientTest extends TestCase {
 
     $asset = $client->getAsset(12345);
     $this->assertTrue(is_object($asset));
-    $this->assertInstanceOf('bynder\webdam\Entity\Asset', $asset);
+    $this->assertInstanceOf('Bynder\webdam\Entity\Asset', $asset);
 
   }
 
@@ -190,7 +190,7 @@ class ClientTest extends TestCase {
   /**
    * Tests upload asset without presigned url.
    *
-   * @expectedException \bynder\webdam\Exception\UploadAssetException
+   * @expectedException \Bynder\webdam\Exception\UploadAssetException
    * @expectedExceptionMessage Failed to obtain presigned URL from AWS.
    */
   public function testUploadAssetFailed() {
@@ -235,8 +235,8 @@ class ClientTest extends TestCase {
     $client = new Client($guzzleClient, '', '', '', '');
 
     $asset_list = $client->getFolderAssets(2177680);
-    $this->assertInstanceOf('bynder\webdam\Entity\MiniFolder', $asset_list->folders[0]);
-    $this->assertInstanceOf('bynder\webdam\Entity\Asset', $asset_list->items[0]);
+    $this->assertInstanceOf('Bynder\webdam\Entity\MiniFolder', $asset_list->folders[0]);
+    $this->assertInstanceOf('Bynder\webdam\Entity\Asset', $asset_list->items[0]);
   }
 
 }
